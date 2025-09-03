@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Threat Forecaster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f4f7f9; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .container { max-width: 600px; margin-top: 50px; }
+        .card { border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .card-header { background: #007bff; color: white; font-size: 20px; text-align: center; }
+        .btn-primary { width: 100%; padding: 12px; font-size: 16px; }
+        .result { margin-top: 20px; text-align: center; font-weight: bold; font-size: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">🛡️ System Threat Forecaster</div>
+            <div class="card-body">
+                <form method="POST" action="/predict">
+
+                    <div class="mb-3">
+                        <label class="form-label">Product Name</label>
+                        <input type="text" name="ProductName" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">OS Version</label>
+                        <input type="text" name="OSVersion" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Processor Core Count</label>
+                        <input type="number" name="ProcessorCoreCount" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Total RAM (MB)</label>
+                        <input type="number" name="TotalPhysicalRAMMB" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Disk Capacity (MB)</label>
+                        <input type="number" name="PrimaryDiskCapacityMB" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Primary Disk Type</label>
+                        <input type="text" name="PrimaryDiskType" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Secure Boot Enabled</label>
+                        <select name="IsSecureBootEnabled" class="form-select">
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Virtual Device</label>
+                        <select name="IsVirtualDevice" class="form-select">
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Touch Enabled</label>
+                        <select name="IsTouchEnabled" class="form-select">
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Pen Capable</label>
+                        <select name="IsPenCapable" class="form-select">
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Is Gamer</label>
+                        <select name="IsGamer" class="form-select">
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Region Identifier</label>
+                        <input type="number" name="RegionIdentifier" class="form-control" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">🔍 Predict</button>
+                </form>
+
+                {% if result %}
+                    <div class="result">{{ result }}</div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
