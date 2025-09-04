@@ -127,10 +127,10 @@ Performance Metrics:
 
 ### 🔮 Future Enhancements
 
-✅ Deploy web app on Streamlit Cloud / Render / Heroku
-✅ Add real-time scanning agent for system integration
-✅ Integrate explainability tools (e.g., SHAP, LIME)
-✅ Experiment with deep learning models for improved accuracy
+- ✅ Deploy web app on Streamlit Cloud / Render / Heroku
+- ✅ Add real-time scanning agent for system integration
+- ✅ Integrate explainability tools (e.g., SHAP, LIME)
+- ✅ Experiment with deep learning models for improved accuracy
 
 ### 📜 License
 
