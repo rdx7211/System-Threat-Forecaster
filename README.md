@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🛡️ System Threat Forecaster  
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)  
@@ -39,8 +38,10 @@ This project combines **data preprocessing, machine learning model training, and
 
 ---
 
-## 📂 Project Structure  
-
+## 📂 Project Structure
+---
+ 
+```
 SYSTEM-THREAT-FORECASTER/
 
 ├── data/                        # Raw Kaggle dataset
@@ -72,7 +73,8 @@ SYSTEM-THREAT-FORECASTER/
 ├── .gitignore                   # Ignore data, venv, pycache, etc.
 ├── LICENSE                      # License file
 ├── README.md                    # Project documentation
-
+```
+---
 
 ## ⚙️ Tech Stack  
 
@@ -115,5 +117,4 @@ The telemetry data used contains system properties and infection records collect
 
 ---
 
-## 🏗️ Project Architecture  
->>>>>>> b30d181c7b4fb1f50823a81361644b9bfa53273e
+
