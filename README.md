@@ -149,3 +149,8 @@ This project is open-source and available under the MIT License.
 
 ### 🔹 Prediction Result  
 <img src="assets/prediction_result.png" alt="Prediction Screenshot" width="400"/>
+
+## ⭐ Competition Performance  
+
+- My performance in the [Kaggle System Threat Forecaster Competition](https://www.kaggle.com/competitions/System-Threat-Forecaster/leaderboard?search=22f1001919) is also included as part of this project.  
+
