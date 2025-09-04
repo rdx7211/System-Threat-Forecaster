@@ -44,6 +44,11 @@ This project combines **data preprocessing, machine learning model training, and
 ```
 SYSTEM-THREAT-FORECASTER/
 
+
+├── assets/                      # Screenshots for README
+│   ├── form_input.png
+│   ├── prediction_result.png
+│
 ├── data/                        # Raw Kaggle dataset
 │   ├── train.csv
 │   ├── test.csv
@@ -53,8 +58,8 @@ SYSTEM-THREAT-FORECASTER/
 │   ├── default_values.json
 │
 ├── research/                    
-│   ├── Training_notebook.ipynb  # Jupyter notebooks for experiments(Which includes)
-|   ├── submission.csv           # Example Kaggle submission
+│   ├── Training_notebook.ipynb  # Jupyter notebook for experiments
+│   ├── submission.csv           # Example Kaggle submission
 │
 ├── src/                         # Modularized Python scripts
 │   ├── __init__.py
@@ -72,7 +77,8 @@ SYSTEM-THREAT-FORECASTER/
 ├── environment.yml              # Conda environment (optional)
 ├── .gitignore                   # Ignore data, venv, pycache, etc.
 ├── LICENSE                      # License file
-├── README.md                    # Project documentation
+└── README.md                    # Project documentation
+
 ```
 ---
 
@@ -120,10 +126,10 @@ Final Model: LightBGM (final_pipeline.pkl)
 
 Performance Metrics:
 
-- Accuracy: ~XX%
-- Precision: ~XX%
-- Recall: ~XX%
-- ROC-AUC: ~XX%
+- Accuracy: 0.6246
+- Precision: 0.63
+- Recall:  0.58
+- ROC-AUC: 0.6796 ± 0.0032
 
 ### 🔮 Future Enhancements
 
