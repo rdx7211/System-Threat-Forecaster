@@ -89,16 +89,49 @@ SYSTEM-THREAT-FORECASTER/
 
 ## 🚀 How to Run  
 
-### 1️⃣ Clone the Repository  
+### 1️⃣ Clone the Repository 
+
 ```bash
+
 git clone https://github.com/your-username/System-Threat-Forecaster.git
 
 ```
 ### 2️⃣ Create Environment & Install Dependencies
+
 ```bash
+
 conda create -n threat-forecast python=3.9 -y
 conda activate threat-forecast
 pip install -r requirements.txt
 
 ```
+### 3️⃣ Run Flask App
 
+```bash
+
+python app.py
+
+```
+The app will be live at 👉 http://127.0.0.1:5000/
+
+### 📊 Results
+
+Final Model: LightBGM (final_pipeline.pkl)
+
+Performance Metrics:
+
+- Accuracy: ~XX%
+- Precision: ~XX%
+- Recall: ~XX%
+- ROC-AUC: ~XX%
+
+### 🔮 Future Enhancements
+
+✅ Deploy web app on Streamlit Cloud / Render / Heroku
+✅ Add real-time scanning agent for system integration
+✅ Integrate explainability tools (e.g., SHAP, LIME)
+✅ Experiment with deep learning models for improved accuracy
+
+### 📜 License
+
+This project is open-source and available under the MIT License.
