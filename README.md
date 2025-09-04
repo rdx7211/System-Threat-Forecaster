@@ -135,3 +135,11 @@ Performance Metrics:
 ### 📜 License
 
 This project is open-source and available under the MIT License.
+
+## 🖼️ Screenshots  
+
+### 🔹 Input Form  
+<img src="assets/form_input.png" alt="Form Screenshot" width="400"/>
+
+### 🔹 Prediction Result  
+<img src="assets/prediction_result.png" alt="Prediction Screenshot" width="400"/>
